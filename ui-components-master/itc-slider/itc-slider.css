@@ -1,0 +1,125 @@
+/**
+ * ItcSlider
+ * @version 1.0.0
+ * @author https://github.com/itchief
+ * @copyright Alexander Maltsev 2020 - 2022
+ * @license MIT (https://github.com/itchief/ui-components/blob/master/LICENSE)
+ * @tutorial https://itchief.ru/javascript/slider
+ */
+
+.itc-slider {
+  position: relative;
+}
+
+.itc-slider__wrapper {
+  overflow: hidden;
+}
+
+.itc-slider__items {
+  display: flex;
+  transition: transform 0.5s ease;
+  will-change: transform;
+}
+
+.itc-slider__transition-none {
+  transition: none;
+}
+
+.itc-slider__item {
+  flex: 0 0 100%;
+  max-width: 100%;
+  user-select: none;
+  will-change: transform;
+}
+
+/* кнопки влево и вправо */
+.itc-slider__btn {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 50px;
+  background: rgb(0 0 0 0);
+  border: none;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.itc-slider__btn_hide {
+  display: none;
+}
+
+.itc-slider__btn_prev {
+  left: 0;
+}
+
+.itc-slider__btn_next {
+  right: 0;
+}
+
+
+
+.itc-slider__btn::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+
+
+/* индикаторы */
+.itc-slider__indicators {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  margin: 0 15%;
+  padding-left: 0;
+  list-style: none;
+  background-color: transparent;
+}
+
+.itc-slider__indicator {
+  flex: 0 1 auto;
+  
+  margin-right: 7px;
+  margin-left: 8px;
+  text-indent: -999px;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin-bottom: 33px;
+
+width: 20px;
+height: 20px;
+
+background: url(icons8-внутри-тонкой-окружности-50.png);
+border: 2px solid #FF0000;
+border-radius: 10px;
+}
+@media (max-width: 1000px) {
+  .itc-slider__indicator {
+    width: 15px;
+    height: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .itc-slider__indicator {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.itc-slider__indicator_active {
+  
+  background: linear-gradient(0deg, #FF0000, #FF0000), url(img/icons8-внутри-тонкой-окружности-50.png);
+border-radius: 15px;
+}
