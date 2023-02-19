@@ -43,6 +43,7 @@
   height: 50px;
   background: rgb(0 0 0 0);
   border: none;
+  z-index: 2;
   transform: translateY(-50%);
   cursor: pointer;
   background-color: transparent;
@@ -53,11 +54,11 @@
 }
 
 .itc-slider__btn_prev {
-  left: 0;
+  left: 4px;
 }
 
 .itc-slider__btn_next {
-  right: 0;
+  right: 4px;
 }
 
 
