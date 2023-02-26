@@ -1,0 +1,120 @@
+.kalyan img, .fruit-bowl img {
+    
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 10px 0 ;
+}
+section img {
+    filter: brightness(80%);
+}
+.kalyan span {
+    font-size: 14px;
+}
+.kalyans {
+    margin-top: 110px;
+    text-align: center;
+}
+.kalyan-class, .fruit-class, .hookah-flask {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    border-bottom: 1px solid #ff0000;
+}
+.kalyan-img {
+    position: relative;
+}
+.kalyans h3 {
+    font-size: 30px;
+}
+.fruit-bowl p {
+    font-size: 20px;
+}
+.fruit-bowl:nth-child(2) img {
+    object-fit: contain;
+}
+.fruit p.bottom {
+    position: relative;
+    bottom: 50px;
+}
+.text-around .line {
+    text-align: left;
+}
+.hookah-flask img {
+    width: 50%;
+    
+}
+.flask {
+    width: 30%;
+    line-height: 30px;
+}
+@media (max-width: 850px) {
+    .kalyan img, .fruit-bowl img {
+        width: 150px;
+        height: 150px;
+    }
+}
+@media (max-width: 700px) {
+    .fruit p.bottom {
+        font-size: 14px;
+    }
+}
+@media (max-width: 620px) {
+    .kalyan img, .fruit-bowl img {
+        width: 100px;
+        height: 100px;
+    }
+}
+@media (max-width: 520px) {
+    body {
+        font-size: 14px;
+    }
+    .fruit-bowl p {
+        font-size: 14px;
+    }
+    .kalyan span {
+        font-size: 12px;
+    }
+    .fruit p.bottom {
+        font-size: 12px;
+    }
+    .kalyans h3 {
+        font-size: 24px;
+    }
+    .text-around .line p {
+        font-size: 14px;
+    }
+    .kalyan-class, .fruit-class, .hookah-flask {
+        padding: 30px 0;
+    }
+    .fruit p.bottom {
+        bottom: 30px;
+    }
+}
+@media (max-width: 420px) {
+    .kalyan img, .fruit-bowl img {
+        width: 70px;
+        height: 70px;
+    }
+    body {
+        font-size: 12px;
+    }
+    .fruit-bowl p {
+        font-size: 12px;
+    }
+    .kalyan span {
+        font-size: 10px;
+    }
+    .fruit p.bottom {
+        font-size: 10px;
+    }
+    .kalyans h3 {
+        font-size: 18px;
+    }
+    .text-around .line p {
+        font-size: 12px;
+    }
+    .flask {
+        line-height: 15px;
+    }
+}

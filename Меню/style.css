@@ -60,9 +60,15 @@ ul li {
     position: relative;
     margin-top: 110px;
 }
-.h1-menu {
+.header-menu {
     text-align: center;
 }
+.kalyan-button {
+    border: 2px solid #ff0000;
+background-color: transparent;
+padding: 10px 20px;
+}
+
 .colomns {
     column-count: 2;
     margin: 2%;

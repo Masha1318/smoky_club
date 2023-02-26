@@ -182,20 +182,22 @@ h2 {
 }
 .action {
     height: 500px;
-    margin: 0 10%;
+    
 }
 .action p {
     color: #fff;
     display: flex;
     justify-content: center;
     margin-top: 0;
+    margin-bottom: 10px;
 }
 .logo-action {
     display: flex;
-    justify-content: space-between;
-   
+    justify-content: space-around;
 }
-
+.action-info {
+position: relative;
+}
 .logo-action div img {
     width: 400px;
     height: 330px;
@@ -205,12 +207,11 @@ h2 {
 .text-action {
     position: absolute;
     z-index: 2;
-    margin-top: -200px;
-    margin-left: 50px;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-}
-.action-2 .text-action {
-    margin-left: 150px;
 }
 .logo-action div div span {
     color: #fff;
@@ -223,10 +224,15 @@ h2 {
 .logo-action div div .small {
     font-size: 20px;
 }
+.card {
+    position: relative;
+}
 .card img {
-    width: 1295px;
-    height: 594px;
-    margin: 80px 60px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 400px;
+    z-index: -1;
 }
 footer {
     height: 471px;
@@ -244,10 +250,12 @@ footer button {
     margin-top: 112px;
     margin-left: 73px;
 }
+.colomn1 p {
+    margin: 50px 0;
+}
 .colomn1 p a {
     color: #8B8B8B;
     font-size: 24px;
-    margin-top: 30px;
     line-height: 29px;
 }
 .icon {
@@ -270,6 +278,35 @@ footer button {
     color: #8B8B8B;
     font-size: 24px;
     line-height: 40px;
+}
+@media (max-width: 1300px) {
+    .logo-action div img {
+        width: 350px;
+        height: 300px;
+    }
+}
+@media (max-width: 1100px) {
+    .text-home {
+        margin-top: 250px;
+    }
+    .logo-action div img {
+        width: 300px;
+        height: 250px;
+    }
+    .logo-action div div span {
+        font-size: 14px;
+    }
+    .logo-action div div p {
+        font-size: 36px;
+    }
+    .logo-action div div .small {
+        font-size: 20px;
+    }
+}
+@media (max-width: 1060px)  {
+    .time img {
+        margin-right: 30px;
+    }
 }
 @media (max-width: 1000px) {
     
@@ -347,7 +384,7 @@ footer button {
         font-size: 14px;
     }
     .text-home {
-        margin-top: 150px;
+        margin-top: 180px;
     }
     h1 {
         font-size: 40px;
@@ -380,6 +417,7 @@ footer button {
     .adress-time div img {
         width: 40px;
         height: 40px;
+        margin-right: 25px;
     }
     .adress-time div p a {
         font-size: 16px;
@@ -432,29 +470,17 @@ footer button {
         width: 287px;
         height: 204px;
     }
-    .text-action {
-        margin-top: -150px;
-        margin-left: 30px;
-        text-align: center;
-    }
-    .action-2 .text-action {
-        margin-left: 100px;
-    }
+    
     .logo-action div div span {
         font-size: 14px;
     }
     .logo-action div div p {
-        margin: 0;
         font-size: 32px;
     }
     .logo-action div div .small {
         font-size: 20px;
     }
-    .card img {
-        width: 90%;
-        height: 300px;
-        margin: 50px ;
-    }
+    
     footer {
         height: 353px;
     }
@@ -471,9 +497,11 @@ footer button {
         margin-top: 90px;
         margin-left: 50px;
     }
+    .colomn1 p {
+        margin: 30px 0;
+    }
     .colomn1 p a {
         font-size: 18px;
-        margin-top: 20px;
         line-height: 25px;
     }
     .icon {
@@ -494,6 +522,145 @@ footer button {
         line-height: 30px;
     }
 }
+@media (max-width: 920px) {
+    .logo-action div img {
+        width: 250px;
+        height: 200px;
+    }
+    .logo-action div div p {
+       
+        font-size: 30px;
+    }
+}
+@media (max-width: 800px) {
+    .logo-action div img {
+        width: 230px;
+        height: 180px;
+    }
+    .logo-action div div p {
+       
+        font-size: 28px;
+    }
+}
+@media (max-width: 740px) {
+    .logo-action div img {
+        width: 200px;
+        height: 150px;
+    }
+    .logo-action div div span {
+        font-size: 14px;
+    }
+    .logo-action div div p {
+        font-size: 24px;
+    }
+    .logo-action div div .small {
+        font-size: 18px;
+    }
+}
+@media (max-width: 700px) {
+    .adress-time {
+        padding: 30px 50px;
+    }
+}
+@media (max-width: 675px) {
+    .colomn1 p {
+        margin: 10px 0;
+    }
+}
+@media (max-width: 640px) {
+    .adress-time {
+        padding: 30px 35px;
+    }
+    .adress-time div img {
+        margin-right: 15px;
+    }
+    .action {
+        height: 270px;
+    }
+    .logo-action div img {
+        width: 180px;
+        height: 120px;
+    }
+    .logo-action div div p {
+        font-size: 22px;
+    }
+    .colomn1 {
+        margin-top: 60px;
+        margin-left: 40px;
+    }
+    footer button {
+        margin-left: 50%;
+        margin-top: 50px;
+    }
+}
+@media (max-width: 580px) {
+    .adress-time {
+        padding: 30px 30px;
+    }
+    .adress-time div img {
+        margin-right: 10px;
+    }
+    .logo-action div img {
+        width: 165px;
+    }
+}
+@media (max-width: 560px) {
+    .adress-time div img {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+    .adress-time div p a {
+        font-size: 14px;
+    }
+    .adress-time div p {
+        font-size: 14px;
+    }
+    .colomn1 {
+        margin-top: 50px;
+        margin-left: 30px;
+    }
+    .colomn1 p a {
+        font-size: 16px;
+    }
+    .dop {
+        margin-top: 130px;
+    }
+    .dop div {
+        margin-right: 70px;
+    }
+    footer {
+        height: 320px;
+    }
+}
+@media (max-width: 520px) {
+    .logo-action div img{
+        width: 150px;
+        height: 104px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    .action {
+        height: 250px;
+    }
+    .action p {
+        font-size: 14px;
+        margin-top: -10px;
+    }
+    .logo-action div div span {
+        font-size: 14px;
+    }
+    .logo-action div div p {
+        font-size: 20px;
+    }
+    .logo-action div div .small {
+        font-size: 16px;
+    }
+    footer button {
+        margin-left: 45%;
+    }
+}
 @media (max-width: 480px) {
     header {
         display: flex;
@@ -506,6 +673,7 @@ footer button {
     }
     .text-home {
         margin-left: 70px;
+        margin-top: 150px;
     }
     h1 {
         margin: 0;
@@ -536,17 +704,7 @@ footer button {
     .adress-time {
         padding: 20px 40px;
     }
-    .adress-time div img {
-        width: 30px;
-        height: 30px;
-        margin-right: 10px;
-    }
-    .adress-time div p a {
-        font-size: 14px;
-    }
-    .adress-time div p {
-        font-size: 14px;
-    }
+    
     .time img {
         margin-left: 10px;
     }
@@ -566,9 +724,7 @@ footer button {
     .servis div p {
         font-size: 14px;
     }
-    h2 {
-        font-size: 30px;
-    }
+    
     .mero {
         height: 250px;
         padding: 0 50px 50px 50px;
@@ -582,40 +738,7 @@ footer button {
         width: 156px;
         text-align: center;
     }
-    .action {
-        height: 250px;
-    }
-    .action p {
-        font-size: 14px;
-        margin-top: -10px;
-    }
-    .logo-action div img{
-        width: 150px;
-        height: 104px;
-    }
-    .text-action {
-        margin-top: -90px;
-        margin-left: 5px;
-        text-align: center;
-    }
-    .action-2 .text-action {
-        margin-left: 30px;
-    }
-    .logo-action div div span {
-        font-size: 14px;
-    }
-    .logo-action div div p {
-        margin: 0;
-        font-size: 20px;
-    }
-    .logo-action div div .small {
-        font-size: 16px;
-    }
-    .card img {
-        width: 90%;
-        height: 200px;
-        margin: 30px ;
-    }
+    
     footer {
         height: 280px;
     }
@@ -649,5 +772,98 @@ footer button {
     .dop div a {
         font-size: 14px;
         line-height: 20px;
+    }
+}
+@media (max-width: 470px) {
+    .logo-action div img{
+        width: 130px;
+        height: 104px;
+    }
+    h2 {
+        font-size: 26px;
+            height: 50px;
+            margin: 0px auto 11px auto;
+        
+    }
+    .action {
+        height: 200px;
+    }
+    .action p {
+        font-size: 12px;
+        margin-top: -20px;
+    }
+    .logo-action div div span {
+        font-size: 12px;
+    }
+    .logo-action div div p {
+        font-size: 18px;
+    }
+    .logo-action div div .small {
+        font-size: 14px;
+    }
+}
+@media (max-width: 470px) {
+    .adress-time div p a {
+        font-size: 12px;
+    }
+    .adress-time div p {
+        font-size: 12px;
+    }
+}
+@media (max-width: 420px) {
+    footer button {
+        margin-left: 45%;
+    }
+    .colomn1 p a {
+        font-size: 14px;
+        line-height: 0px;
+    }
+}
+@media (max-width: 400px) {
+    .logo-action div img{
+        width: 100px;
+        height: 80px;
+    }
+    
+    .logo-action div div span {
+        font-size: 10px;
+    }
+    .logo-action div div p {
+        font-size: 16px;
+    }
+    .logo-action div div .small {
+        font-size: 12px;
+    }
+    .colomn1 {
+        margin-top: 30px;
+        margin-left: 15px;
+    }
+}
+@media (max-width: 380px)  {
+    .tell {
+        width: 150px;
+    }
+    .dop div {
+        margin-right: 30px;
+    }
+    .servis div p {
+        font-size: 12px;
+    }
+}
+@media (max-width: 340px) {
+    .adress-time {
+        padding: 20px 20px;
+    }
+    footer button {
+        margin-left: 50%;
+    }
+    .dop div a {
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
+@media (max-width: 330px) {
+    .dop div {
+        margin-right: 20px;
     }
 }
