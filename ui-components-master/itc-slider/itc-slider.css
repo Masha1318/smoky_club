@@ -32,6 +32,12 @@ transform: translateZ(0);
   user-select: none;
   will-change: transform;
 }
+.itc-slider-2 .itc-slider__item {
+  flex: 0 0 33.3333333333%;
+  max-width: 33.3333333333%;
+  user-select: none;
+  will-change: transform;
+}
 
 /* кнопки влево и вправо */
 .itc-slider__btn {

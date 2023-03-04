@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css?v=1.5">
+    <link rel="stylesheet" href="css/style.css?v=1.6">
     <link rel="icon" type="image/png" sizes="32*32" href="./favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16*16" href="./favicon_io/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180*180" href="./favicon_io/apple-touch-icon.png">
     <link rel="manifest" href="./favicon_io/site.webmanifest">
     <!-- CSS -->
-    <link rel="stylesheet" href="ui-components-master/itc-slider/itc-slider.css?v=1.4">
+    <link rel="stylesheet" href="ui-components-master/itc-slider/itc-slider.css?v=1.6">
     <!-- JavaScript -->
     <script src="ui-components-master/itc-slider/itc-slider.js" defer></script>
     <title>Smoky Club</title>
@@ -133,32 +133,61 @@
         <section class="action" id="action">
             <h2>Акции!</h2>
             <p>Не действуют в праздничные дни</p>
-            <div class="logo-action">
-                <div class="action-info">
-                    <img src="img/original_5ddc9fcf5680bc14244823e2_5ddca28a49ff0.webp" alt="КАЛЬЯН + ЧАЙ 800р.">
-                    <div class="text-action">
-                        <span>ВС. - ЧТ. до 19:00</span>
-                        <p>КАЛЬЯН + ЧАЙ <br>800р.</p>
+            <div class="itc-slider itc-slider-2" data-slider="itc-slider" data-autoplay="true">
+                <div class="itc-slider__wrapper">
+                  <div class="itc-slider__items">
+                    <div class="itc-slider__item">
+                      <!-- Контент 1 слайда -->
+                      <div class="action-info">
+                        <img src="img/original_5ddc9fcf5680bc14244823e2_5ddca28a49ff0.webp" alt="КАЛЬЯН + ЧАЙ 800р.">
+                        <div class="text-action">
+                            <span>ВС. - ЧТ. до 19:00</span>
+                            <p>КАЛЬЯН + ЧАЙ <br>800р.</p>
+                        </div>
                     </div>
+                    </div>
+                    <div class="itc-slider__item">
+                      <!-- Контент 2 слайда -->
+                      <div class="action-info">
+                        <img src="img/-.jpg" alt="2 + 1">
+                        <div class="text-action">
+                            <span>ПТ. - СБ.</span>
+                            <p>2 + 1</p>
+                            <p class="small">коктейль <br>БЕСПЛАТНО</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="itc-slider__item">
+                      <!-- Контент 3 слайда -->
+                      <div class="action-info">
+                        <img src="img/pivo-pena-bokal-koloski.jpg" alt="КАЛЬЯН + ЧАЙ 800р.">
+                        <div class="text-action">
+                            <span>ВС. - ЧТ.</span>
+                            <p>Безлимитное пиво <br>899р.</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="itc-slider__item">
+                        <!-- Контент 4 слайда -->
+                        <div class="action-info">
+                          <img src="img/6xmdGO8NPW4.jpg" alt="КАЛЬЯН + ЧАЙ 800р.">
+                          <div class="text-action">
+                              <span>каждую ПЯТНИЦУ</span>
+                              <p class="small">девушкам</p>
+                              <p>1 + 1</p>
+                              <p class="small">коктейль <br>БЕСПЛАТНО</p>
+                          </div>
+                      </div>
+                    </div>
+                      
+                  </div>
                 </div>
+                <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+                <button class="itc-slider__btn itc-slider__btn_prev"><div class="arrow"><img src="img/icons8-меньше-чем-50.png" alt="<" class="arrow-all"></div></button>
+                <button class="itc-slider__btn itc-slider__btn_next"><div class="arrow"><img src="img/icons8-больше-чем-50.png" alt=">" class="arrow-all"></div></button>
                 
-                <div class="action-info">
-                    <img src="img/-.jpg" alt="2 + 1">
-                    <div class="text-action">
-                        <span>ПТ. - СБ.</span>
-                        <p>2 + 1</p>
-                        <p class="small">коктейль <br>БЕСПЛАТНО</p>
-                    </div>
-                </div>
-
-                <div class="action-info">
-                    <img src="img/pivo-pena-bokal-koloski.jpg" alt="КАЛЬЯН + ЧАЙ 800р.">
-                    <div class="text-action">
-                        <span>ВС. - ЧТ.</span>
-                        <p>Безлимитное пиво <br>899р.</p>
-                    </div>
-                </div>
             </div>
+            
         </section>
 
         <section class="card">

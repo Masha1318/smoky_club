@@ -198,9 +198,11 @@ h2 {
 .action-info {
 position: relative;
 }
-.logo-action div img {
+.action-info img {
     width: 400px;
     height: 330px;
+    display: flex;
+    margin: auto;
     filter: brightness(40%);
     border: 1px solid #ff0000;
 }
@@ -213,15 +215,15 @@ position: relative;
     transform: translate(-50%, -50%);
     text-align: center;
 }
-.logo-action div div span {
+.action-info div span {
     color: #fff;
     font-size: 16px;
 }
-.logo-action div div p {
+.action-info div p {
     margin: 0;
     font-size: 40px;
 }
-.logo-action div div .small {
+.action-info div .small {
     font-size: 20px;
 }
 .card {
@@ -280,7 +282,7 @@ footer button {
     line-height: 40px;
 }
 @media (max-width: 1300px) {
-    .logo-action div img {
+    .action-info img {
         width: 350px;
         height: 300px;
     }
@@ -289,17 +291,17 @@ footer button {
     .text-home {
         margin-top: 250px;
     }
-    .logo-action div img {
+    .action-info img {
         width: 300px;
         height: 250px;
     }
-    .logo-action div div span {
+    .action-info div span {
         font-size: 14px;
     }
-    .logo-action div div p {
+    .action-info div p {
         font-size: 36px;
     }
-    .logo-action div div .small {
+    .action-info div .small {
         font-size: 20px;
     }
 }
@@ -389,9 +391,6 @@ footer button {
     h1 {
         font-size: 40px;
     }
-    .itc-slider {
-        height: 493px;
-    }
     .image-home {
         height: 493px;
     }
@@ -466,18 +465,18 @@ footer button {
     .action p {
         margin-top: -10px;
     }
-    .logo-action div img{
+    .action-info img{
         width: 287px;
         height: 204px;
     }
     
-    .logo-action div div span {
+    .action-info div span {
         font-size: 14px;
     }
-    .logo-action div div p {
+    .action-info div p {
         font-size: 32px;
     }
-    .logo-action div div .small {
+    .action-info div .small {
         font-size: 20px;
     }
     
@@ -523,37 +522,37 @@ footer button {
     }
 }
 @media (max-width: 920px) {
-    .logo-action div img {
+    .action-info img {
         width: 250px;
         height: 200px;
     }
-    .logo-action div div p {
+    .action-info div p {
        
         font-size: 30px;
     }
 }
 @media (max-width: 800px) {
-    .logo-action div img {
+    .action-info img {
         width: 230px;
         height: 180px;
     }
-    .logo-action div div p {
+    .action-info div p {
        
         font-size: 28px;
     }
 }
 @media (max-width: 740px) {
-    .logo-action div img {
+    .action-info img {
         width: 200px;
         height: 150px;
     }
-    .logo-action div div span {
+    .action-info div span {
         font-size: 14px;
     }
-    .logo-action div div p {
+    .action-info div p {
         font-size: 24px;
     }
-    .logo-action div div .small {
+    .action-info div .small {
         font-size: 18px;
     }
 }
@@ -577,11 +576,11 @@ footer button {
     .action {
         height: 270px;
     }
-    .logo-action div img {
+    .action-info img {
         width: 180px;
         height: 120px;
     }
-    .logo-action div div p {
+    .action-info div p {
         font-size: 22px;
     }
     .colomn1 {
@@ -600,7 +599,7 @@ footer button {
     .adress-time div img {
         margin-right: 10px;
     }
-    .logo-action div img {
+    .action-info img {
         width: 165px;
     }
 }
@@ -634,7 +633,7 @@ footer button {
     }
 }
 @media (max-width: 520px) {
-    .logo-action div img{
+    .action-info img{
         width: 150px;
         height: 104px;
     }
@@ -648,13 +647,13 @@ footer button {
         font-size: 14px;
         margin-top: -10px;
     }
-    .logo-action div div span {
+    .action-info div span {
         font-size: 14px;
     }
-    .logo-action div div p {
+    .action-info div p {
         font-size: 20px;
     }
-    .logo-action div div .small {
+    .action-info div .small {
         font-size: 16px;
     }
     footer button {
@@ -678,9 +677,6 @@ footer button {
     h1 {
         margin: 0;
         font-size: 36px;
-    }
-    .itc-slider {
-        height: 409px;
     }
     .image-home {
         height: 409px;
@@ -775,7 +771,7 @@ footer button {
     }
 }
 @media (max-width: 470px) {
-    .logo-action div img{
+    .action-info img{
         width: 130px;
         height: 104px;
     }
@@ -792,13 +788,13 @@ footer button {
         font-size: 12px;
         margin-top: -20px;
     }
-    .logo-action div div span {
+    .action-info div span {
         font-size: 12px;
     }
-    .logo-action div div p {
+    .action-info div p {
         font-size: 18px;
     }
-    .logo-action div div .small {
+    .action-info div .small {
         font-size: 14px;
     }
 }
@@ -820,18 +816,18 @@ footer button {
     }
 }
 @media (max-width: 400px) {
-    .logo-action div img{
+    .action-info img{
         width: 100px;
         height: 80px;
     }
     
-    .logo-action div div span {
+    .action-info div span {
         font-size: 10px;
     }
-    .logo-action div div p {
+    .action-info div p {
         font-size: 16px;
     }
-    .logo-action div div .small {
+    .action-info div .small {
         font-size: 12px;
     }
     .colomn1 {
