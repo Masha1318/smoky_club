@@ -16,6 +16,7 @@ a {
     color: fff;
     text-decoration: none;
     font-weight: 600;
+    cursor: pointer;
    }
 header {
 	position: fixed;
@@ -45,20 +46,11 @@ nav {
     display: block;
     top: 50px;
 }
-ul {
-    display: flex;
-	position: relative;
-	z-index: 2;
-}
-ul li {
-	list-style: none;
-	margin: 0px 0px 0px 36px;
-	font-size: 16px;
-	text-decoration: none;
-}
+
 .section-menu {
     position: relative;
     margin-top: 110px;
+    margin-bottom: 10px;
 }
 .header-menu {
     text-align: center;
@@ -67,28 +59,12 @@ ul li {
     border: 2px solid #ff0000;
 background-color: transparent;
 padding: 10px 20px;
-}
 
-.colomns {
-    column-count: 2;
-    margin: 2%;
-}
-.page {
-    break-inside: avoid;
-    border: 1px solid #ff0000;
-    margin-bottom: 20px;
-    padding: 5px;
-    line-height: 20px;
-}
-.page h2 {
-    font-size: 32px;
-    margin: 0;
-    
 }
 .line {
     display: flex;
     justify-content: space-between;
-    font-size: 20px;
+    font-size: 18px;
 
 }
 .page span {
@@ -97,9 +73,7 @@ padding: 10px 20px;
 .price2 {
     text-align: right;
 }
-h3 {
-    font-size: 16px;
-}
+
 .dops {
     text-align: center;
 }
@@ -111,9 +85,67 @@ h3 {
 }
 .size {
     position: relative;
-    padding-bottom: 5px;
+    font-size: 16px;
+    line-height: 0;
     text-align: right;
+    padding-bottom: 5px
 }
+
+/* Кнопка выпадающего списка */
+.dropbtn {
+    background-color: #1b1d1b;
+    color: white;
+    width: 98%;
+    padding: 16px;
+    font-size: 16px;
+    border: 2px solid #ff0000;
+    cursor: pointer;
+    margin: 5px 10px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  
+  
+  /* Контейнер <div> - необходим для размещения выпадающего содержимого */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+  
+  /* Выпадающее содержимое (скрыто по умолчанию) */
+  .dropdown-content{
+    display: none;
+    position: relative;
+    background-color: #1b1d1b;
+    min-width: 160px;
+    width: 100%;
+    
+    margin: 0 20px;
+    
+  }
+  .dropdown-content li {
+    border: 2px solid #ff0000;
+    width: 100%;
+    margin: 0 0 5px 0;
+    padding: 10px;
+    text-align: left;
+    line-height: 15px;
+  }
+  .nap {
+    border: none;
+    width: 100%;
+    margin: 0 ;
+    padding: 10px;
+    text-align: left;
+    line-height: 15px;
+  }
+  
+  
+  /* Показать выпадающее меню (используйте JS, чтобы добавить этот класс .dropdown-content содержимого, когда пользователь нажимает на кнопку выпадающего списка) */
+  .show {display:block;}
 @media(max-width: 1000px){
 nav {
 	display: block;
@@ -124,6 +156,10 @@ nav {
     width: 100%;
     transition: all 0.4s ease;
 	left:-110%;
+}
+.dropdown-content li {
+    
+    width: 95%;
 }
 ul {
 	display: block;
@@ -188,4 +224,26 @@ header {
     column-count: 1;
 }
 
+}
+@media(max-width: 996px){
+    .dropbtn {
+        
+        width: 97%;
+    }
+    .dropdown-content li {
+    
+        width: 90%;
+    }
+}
+@media(max-width: 672px){
+    .dropbtn {
+        
+        width: 96%;
+    }
+}
+@media(max-width: 576px){
+    .dropbtn {
+        
+        width: 94%;
+    }
 }

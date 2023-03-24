@@ -27,7 +27,7 @@ header {
     padding: 5px 0;
     background: #1B1D1B;
     width: 100%;
-    opacity: 0.8;
+   
     justify-content: space-between;
 }
 .logo {
@@ -71,7 +71,7 @@ a {
 h1 {
     color: #fff;
     font-size: 60px;
-    font-style: bold;
+    font-weight: bold;
 }
 .tell {
     padding: auto;
@@ -374,6 +374,7 @@ footer button {
     }
     nav.open-menu {
         left: 0;
+        overflow: auto;
     }
     .fixed-page{
         overflow: hidden; /*запрещаем прокручивание страницы при открытом меню*/
@@ -602,6 +603,9 @@ footer button {
     .action-info img {
         width: 165px;
     }
+    .dop div {
+        margin-right: 90px;
+    }
 }
 @media (max-width: 560px) {
     .adress-time div img {
@@ -814,6 +818,9 @@ footer button {
         font-size: 14px;
         line-height: 0px;
     }
+    .dop div {
+        margin-right: 45px;
+    }
 }
 @media (max-width: 400px) {
     .action-info img{
@@ -844,6 +851,22 @@ footer button {
     }
     .servis div p {
         font-size: 12px;
+    }
+}
+@media (max-width: 355px) {
+    .dop div {
+        margin-right: 20px;
+    }
+    footer button {
+        margin-left: 52%;
+    }
+}
+@media (max-width: 346px) {
+    .dop div {
+        margin-right: 15px;
+    }
+    footer button {
+        margin-left: 52%;
     }
 }
 @media (max-width: 340px) {

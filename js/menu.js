@@ -4,4 +4,5 @@ $(document).ready(function() {
         $('nav').toggleClass('open-menu');
         $('body').toggleClass('fixed-page');
     });
+
 });
